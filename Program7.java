@@ -1,5 +1,5 @@
 package com.mycompany.program7;
-public class Program7 {
+public class ElectricityConsumptionChecker {
 
     public static void main(String[] args) {
         int units=350;

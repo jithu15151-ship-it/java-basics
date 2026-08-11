@@ -1,6 +1,6 @@
 package com.mycompany.program5;
 
-public class Program5 {
+public class HighestMarkFinder {
 
     public static void main(String[] args) {
         int[]score={54,23,65,87,34};

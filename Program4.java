@@ -1,5 +1,5 @@
 package com.mycompany.program4;
-public class Program4 {
+public class TrafficLightSwitch {
     public static void main(String[] args) {
  char c='y';
  switch(c)

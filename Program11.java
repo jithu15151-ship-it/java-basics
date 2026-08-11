@@ -1,6 +1,6 @@
 package com.mycompany.program11;
 import java.util.Scanner;
-public class Program11 {
+public class SumOfThreeNumbers {
 
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);

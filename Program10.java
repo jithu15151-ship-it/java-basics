@@ -10,7 +10,7 @@ class add
         return a+b+c;
     }
 }
-public class Program10 {
+public class AdditionOverloading {
 
     public static void main(String[] args) {
        add o = new add();

@@ -12,7 +12,7 @@ class bank
 }
    }
 }
-public class Program3 {
+public class EvenNumberFilter {
 
     public static void main(String[] args) {
         bank o=new bank();

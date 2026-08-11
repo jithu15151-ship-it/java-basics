@@ -20,7 +20,7 @@ class arthematic
  }
 }
 
-public class Program2 {
+public class ArithmeticOperations {
 
     public static void main(String[] args) {
         arthematic object = new arthematic();

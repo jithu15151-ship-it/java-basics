@@ -10,8 +10,8 @@ int shape(int len,int brth)
 {
     return len*brth;
 }
-        }
-public class Program9 {
+    }
+public class MethodOverloading {
 
     public static void main(String[] args) {
   shape obj=new shape();

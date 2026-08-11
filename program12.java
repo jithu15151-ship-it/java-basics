@@ -1,7 +1,7 @@
 
 package com.mycompany.divisible;
 import java.util.Scanner;
-public class Divisible {
+public class DivisibilityChecker {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

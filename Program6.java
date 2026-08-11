@@ -2,7 +2,7 @@
 
 package com.mycompany.program6;
 
-public class Program6 {
+public class StudentAttendanceCounter {
 
     public static void main(String[] args) {
          

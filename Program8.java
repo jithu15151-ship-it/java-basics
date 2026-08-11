@@ -23,7 +23,7 @@ class employee
     }
 }
 
-public class Program8 {
+public class EmployeeConstructorDemo {
 
     public static void main(String[] args) {
         employee obj =new employee();

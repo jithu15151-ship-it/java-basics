@@ -10,7 +10,7 @@ class student
          System.out.println("roll no:"+rno);
     }
 }
-public class Program1 {
+public class StudentInfo {
        public static void main(String[] args) {
         student obj=new student();
         obj.name="jithu";
