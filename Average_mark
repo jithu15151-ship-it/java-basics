@@ -1,0 +1,77 @@
+
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class Student{
+    private String name;
+    private int[] mark;
+    
+
+    public Student(String name, int[] mark) {
+        this.name=name;
+        this.mark=mark;
+    }
+    public int getMark()
+    {
+        return mark.length;
+    }
+    public int getSum(){
+        int sum=0;
+        for(int i=0;i<mark.length;i++){
+       sum+=mark[i];
+        }
+        return sum;
+    }
+    public int getMaximumMark()
+    {
+        int maximum=0;
+        for(int mark:mark)
+        {
+            if(mark>maximum){
+                maximum=mark;
+            }
+        }
+        return maximum;
+    }
+    public int getMinimumMark()
+    {
+        int minimumMark=Integer.MAX_VALUE;
+        
+        
+        for(int mark:mark){
+            if(mark<minimumMark)
+            {
+                minimumMark=mark;     
+            }       
+        }
+        return minimumMark;
+    }
+    public BigDecimal getAverage(){
+        int sum = getSum();
+        
+        BigDecimal avg=BigDecimal.valueOf(sum).divide(BigDecimal.valueOf(mark.length),3,RoundingMode.UP);
+        return avg;
+    }
+}
+public class MainClassForArrayCollection {
+    public static void main(String[] args) 
+    {
+        int marks[]={67,75,89};
+        Student Student;
+        Student = new Student("Jithu",marks);
+        int number=Student.getMark();      
+        System.out.println("mark of the Student: "+number);
+        int sum=Student.getSum();
+        System.out.println("Sum of Mark is: "+sum);
+        int maximumMark=Student.getMaximumMark();
+                System.out.println("maximum Mark is: "+maximumMark);
+                int minimumMark=Student.getMinimumMark();
+                System.out.println("minmum Mark is: "+minimumMark);
+                BigDecimal average=Student.getAverage();
+                System.out.println("Average mark is: "+average);
+
+
+
+    }
+}
