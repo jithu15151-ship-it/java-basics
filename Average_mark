@@ -2,34 +2,37 @@
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
 
 public class Student{
     private String name;
-    private int[] mark;
+    private ArrayList<Integer> mark=new ArrayList<Integer>();
     
 
     public Student(String name, int... mark) {
         this.name=name;
-        this.mark=mark;
+        for(int m:mark){
+        this.mark.add(m);
+    }
     }
     public int getMark()
     {
-        return mark.length;
+        return mark.size();
     }
     public int getSum(){
         int sum=0;
-        for(int i=0;i<mark.length;i++){
-       sum+=mark[i];
+        for(int i:mark){
+       sum+=i;
         }
         return sum;
     }
     public int getMaximumMark()
     {
         int maximum=0;
-        for(int mark:mark)
+        for(int i:mark)
         {
-            if(mark>maximum){
-                maximum=mark;
+            if(i>maximum){
+                maximum=i;
             }
         }
         return maximum;
@@ -39,10 +42,10 @@ public class Student{
         int minimumMark=Integer.MAX_VALUE;
         
         
-        for(int mark:mark){
-            if(mark<minimumMark)
+        for(int i:mark){
+            if(i<minimumMark)
             {
-                minimumMark=mark;     
+                minimumMark=i;     
             }       
         }
         return minimumMark;
@@ -50,7 +53,7 @@ public class Student{
     public BigDecimal getAverage(){
         int sum = getSum();
         
-        BigDecimal avg=BigDecimal.valueOf(sum).divide(BigDecimal.valueOf(mark.length),3,RoundingMode.UP);
+        BigDecimal avg=BigDecimal.valueOf(sum).divide(BigDecimal.valueOf(mark.size()),3,RoundingMode.UP);
         return avg;
     }
 }
